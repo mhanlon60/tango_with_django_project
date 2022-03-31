@@ -5,6 +5,7 @@ from rango.models import Page
 from rango.forms import CategoryForm
 from django.shortcuts import redirect
 from django.urls import reverse
+from rango.forms import PageForm
 
 
 def index(request):
@@ -27,9 +28,6 @@ def index(request):
 # Create your views here.
 def about(request):
     return render(request, 'rango/about.html')
-
-
-from rango.forms import PageForm
 
 
 def add_page(request, category_name_slug):

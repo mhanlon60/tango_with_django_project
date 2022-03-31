@@ -5,23 +5,18 @@
  </head>
 
  <body>
- <h1>Add a Page to {{ category.name }}</h1>
+ <h1>Add a Page</h1>
  <div>
  <form id="add_page_form" method="post" action="/rango/category/{{ category.slug }}/add_page/">
- {% if category %}
-     {% csrf_token %}
-     {% csrf_token %}
-    {% for hidden in form.hidden_fields %}
-        {{ hidden }}
-    {% endfor %}
-    {% for field in form.visible_fields %}
-        {{ field.errors }}
-        {{ field.help_text }}
-        {{ field }}
-    {% endfor %}
-     {% else %}
-        <strong>There are no pages present.</strong>
-     {% endif %}
+            {% csrf_token %}
+            {% for hidden in form.hidden_fields %}
+                {{ hidden }}
+            {% endfor %}
+            {% for field in form.visible_fields %}
+                {{ field.errors }}
+                {{ field.help_text }}
+                {{ field }}
+            {% endfor %}
         <input type="submit" name="submit" value="Add Page" />
 
  </form>
