@@ -30,7 +30,7 @@ SECRET_KEY = 'mut=1ov@d1u0*xcf0x_jcn$q@z(+wx+5d8nnh#j&4$i$cj=%wg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://markcoursework.pythonanywhere.com/']
+ALLOWED_HOSTS = ['http://2662428h.pythonanywhere.com/']
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
